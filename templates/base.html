@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<link rel="icon" href="{{prefix}}assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{prefix}}assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到內容</a>
+<header class="site-head">
+  <a class="brand" href="{{prefix}}index.html"><img src="{{prefix}}assets/logo.svg" alt="{{site_name}}" width="153" height="40"></a>
+  <nav aria-label="頁面類型">{{nav}}</nav>
+</header>
+<main id="main">
+{{body}}
+</main>
+<footer class="site-foot">
+  <p class="disclaimer">{{disclaimer}}</p>
+  <p><a href="{{site_home}}">{{site_name}}</a>・<a href="{{library}}">文獻庫</a></p>
+  <p class="small">這個推廣站照 AGENTS.md 的規則產生，內容縮寫自貓健康站已審核的文章。</p>
+</footer>
+{{sticky_cta}}
+</body>
+</html>
