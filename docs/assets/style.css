@@ -1,0 +1,269 @@
+/* 貓健康站推廣頁 — 色票沿用 cat-health-tw/frontend/css/theme.css（改版色票第二版）
+ * 規則：只用下面的變數，不要在別處寫新的顏色。文字色都達 WCAG AA 4.5:1。 */
+:root {
+  --bg: #f9f6f0;            /* 奶油米色紙面 */
+  --bg-card: #ffffff;
+  --text: #1d1d1f;
+  --text-2: #4a4a4c;        /* 副標、卡片說明 */
+  --text-muted: #636368;
+  --primary: #3b6a50;       /* 深苔綠：連結、主按鈕 */
+  --primary-deep: #2a4c39;
+  --primary-pale: #e7efe9;
+  --gold: #b8860b;          /* 只給小記號，不當文字色 */
+  --gold-pale: #f6ecd2;
+  --emergency: #b93a2e;     /* 只給急診 */
+  --emergency-deep: #8f2a21;
+  --emergency-pale: #fbe9e7;
+  --border: #e8e4db;
+  --border-strong: #d4cfc3;
+  --focus: #ffdd00;
+  --cat-white: #f9fbf9;     /* 線條貓插畫 */
+  --cat-blush: #f2d6d0;
+  --cat-ink: #1d1d1f;
+  --radius: 14px;
+  --wrap: 1040px;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  font-size: 17px; line-height: 1.75;
+}
+a { color: var(--primary); text-underline-offset: 3px; }
+a:hover { color: var(--primary-deep); }
+:focus-visible { outline: 3px solid var(--text); background: var(--focus); color: var(--text); }
+h1, h2, h3 { line-height: 1.35; margin: 0 0 .5em; }
+h1 { font-size: clamp(1.6rem, 4.5vw, 2.3rem); }
+h2 { font-size: 1.25rem; margin-top: 1.6em; }
+p { margin: 0 0 1em; }
+ul, ol { padding-left: 1.4em; margin: 0 0 1em; }
+li { margin-bottom: .35em; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 16px; top: 8px; z-index: 10; padding: 6px 10px; }
+
+/* 頁首頁尾 */
+.site-head {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 20px;
+  max-width: var(--wrap); margin: 0 auto; padding: 14px 16px;
+}
+.brand { display: flex; align-items: center; }
+.brand img { display: block; height: 40px; width: auto; }
+.site-head nav { display: flex; gap: 4px; flex-wrap: wrap; }
+.site-head nav a { color: var(--text-2); text-decoration: none; padding: 4px 10px; border-radius: 999px; font-size: .95rem; }
+.site-head nav a:hover, .site-head nav a[aria-current] { background: var(--primary-pale); color: var(--primary-deep); }
+main { max-width: var(--wrap); margin: 0 auto; padding: 0 16px 40px; }
+.site-foot {
+  border-top: 1px solid var(--border); text-align: center; color: var(--text-muted);
+  padding: 24px 16px 96px; font-size: .9rem;
+}
+.site-foot .disclaimer { color: var(--text); font-weight: 500; }
+.small { font-size: .82rem; }
+
+/* 按鈕與導流 */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 18px;
+  border-radius: 999px; background: var(--primary); color: #fff; text-decoration: none; font-weight: 500;
+  border: 2px solid var(--primary);
+}
+.btn:hover { background: var(--primary-deep); border-color: var(--primary-deep); color: #fff; }
+.btn-ghost { background: transparent; color: var(--primary-deep); }
+.btn-ghost:hover { background: var(--primary-pale); color: var(--primary-deep); }
+.btn-urgent { background: var(--emergency); border-color: var(--emergency); }
+.btn-urgent:hover { background: var(--emergency-deep); border-color: var(--emergency-deep); }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.funnel {
+  margin: 28px 0; padding: 20px; border-radius: var(--radius);
+  background: var(--primary-pale); border: 1px solid #cfe0d4;
+}
+.funnel h2 { margin-top: 0; }
+.funnel-label { color: var(--text-2); margin-bottom: 10px; }
+.funnel-main, .reading-link {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  background: var(--bg-card); border: 1px solid var(--border-strong); border-radius: 12px;
+  padding: 14px 16px; text-decoration: none; color: var(--text); font-weight: 700;
+}
+.funnel-main:hover, .reading-link:hover { border-color: var(--primary); color: var(--primary-deep); }
+.arrow { color: var(--primary); font-size: 1.2em; }
+.reading { list-style: none; padding: 0; display: grid; gap: 8px; }
+.reading li { margin: 0; }
+.sticky-cta {
+  position: fixed; left: 50%; bottom: 14px; transform: translateX(-50%);
+  display: inline-flex; gap: 8px; align-items: center; padding: 10px 20px; min-height: 44px;
+  border-radius: 999px; background: var(--text); color: #fff; text-decoration: none; font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0,0,0,.18); white-space: nowrap;
+}
+.sticky-cta:hover { color: #fff; background: #424245; }
+@media (min-width: 820px) { .sticky-cta { display: none; } .site-foot { padding-bottom: 32px; } }
+.app-status { margin: 24px 0; padding: 16px 18px; border-radius: var(--radius); background: var(--gold-pale); }
+.app-status p { margin: 4px 0 0; color: var(--text-2); }
+.app-note {
+  display: inline-flex; align-items: center; gap: 10px; margin: 0 0 4px; padding: 6px 16px 6px 6px;
+  border-radius: 999px; background: var(--primary-pale); border: 1px solid #cfe0d4;
+  color: var(--primary-deep); font-weight: 500; font-size: .95rem;
+}
+.app-note img { width: 28px; height: 28px; border-radius: 7px; box-shadow: 0 0 0 1px var(--border-strong); }
+.funnel-sub { margin-top: 16px; }
+.badge { display: inline-block; font-size: .78rem; padding: 1px 8px; border-radius: 999px; background: var(--gold-pale); color: #735f33; vertical-align: middle; }
+
+/* 頁面頭 */
+.page-head { padding: 12px 0 8px; }
+.page-head.with-cat { display: flex; gap: 20px; align-items: center; }
+.kicker { color: var(--text-muted); font-size: .9rem; margin-bottom: 4px; }
+.lead { font-size: 1.08rem; color: var(--text-2); }
+.head-cat { width: 96px; height: 96px; flex: none; color: var(--cat-ink); }
+section > h2:first-child { margin-top: 1.2em; }
+.cite a { text-decoration: none; font-size: .75em; padding: 0 2px; }
+.sources { margin-top: 32px; font-size: .88rem; color: var(--text-2); }
+.sources ol { padding-left: 1.6em; }
+.sources li { overflow-wrap: anywhere; }
+
+/* 小卡頁 */
+.card-layout { display: grid; gap: 28px; grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 820px) { .card-layout { grid-template-columns: 380px minmax(0, 1fr); } }
+.post-preview { margin: 0; position: sticky; top: 12px; }
+.post-preview figcaption { font-size: .85rem; margin-top: 8px; text-align: center; }
+.points li { margin-bottom: .8em; }
+.vet-box { padding: 4px 18px 18px; border-radius: var(--radius); background: var(--bg-card); border: 1px solid var(--border); margin-top: 20px; }
+.vet-urgent { border-color: var(--emergency); background: var(--emergency-pale); }
+
+/* 社群貼文卡：4:5，尺寸全部用 cqw，縮圖和 1080 原尺寸長得一樣 */
+.post-card { container-type: inline-size; width: 100%; }
+.post-body {
+  position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden;
+  background: var(--bg); border: 1px solid var(--border-strong); border-radius: 18px;
+  display: flex; flex-direction: column; padding: 7cqw 7cqw 5cqw; color: var(--text);
+}
+.post-top { display: flex; align-items: center; gap: 2cqw; font-size: 3.4cqw; color: var(--text-2); font-weight: 500; }
+.post-top img { height: 7cqw; width: auto; }
+.post-top span { padding-left: 2.4cqw; border-left: 2px solid var(--border-strong); }
+.post-headline { font-size: 8.4cqw; line-height: 1.3; margin: 5cqw 22cqw 4cqw 0; font-weight: 700; }
+.nobr { display: inline-block; max-width: 100%; }   /* 一段長到放不下時才在段內換行，避免撐破手機版面 */
+.post-points { list-style: none; counter-reset: p; padding: 0; margin: 0; display: grid; gap: 2.6cqw; position: relative; z-index: 1; }
+.post-points li {
+  counter-increment: p; display: flex; gap: 3cqw; align-items: baseline; margin: 0;
+  font-size: 4.9cqw; line-height: 1.45; background: var(--bg-card); border-radius: 3cqw; padding: 3cqw 4cqw;
+  border: 1px solid var(--border);
+}
+.post-points li::before { content: counter(p); flex: none; font-weight: 700; color: var(--primary); font-size: 5.4cqw; }
+.post-cat { position: absolute; right: 6cqw; top: 15cqw; width: 19cqw; height: 19cqw; color: var(--cat-ink); }
+.post-foot { margin-top: auto; display: flex; flex-direction: column; gap: .6cqw; font-size: 3cqw; color: var(--text-muted); }
+.post-foot span:first-child { color: var(--primary-deep); font-weight: 700; font-size: 3.4cqw; }
+body.post-only { width: 1080px; margin: 0; background: var(--bg); }
+body.post-only .post-card { width: 1080px; }
+body.post-only .post-body { border: 0; border-radius: 0; }
+
+/* 首頁 */
+.hero { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; padding: 20px 0 8px; }
+.hero-cat { width: 150px; height: auto; color: var(--cat-ink); }
+.hero .lead { max-width: 40em; margin-left: auto; margin-right: auto; }
+.hero .btn-row { justify-content: center; }
+.hero .app-note { margin-bottom: 8px; }
+.home-section { scroll-margin-top: 12px; }
+.tiles, .flip-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+.tiles > *, .flip-grid > * { flex: 0 1 300px; min-width: 0; }
+.tile {
+  overflow-wrap: anywhere;
+  display: flex; flex-direction: column; gap: 4px; padding: 16px 18px;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+  text-decoration: none; color: var(--text); transition: border-color .15s;
+}
+.tile:hover { border-color: var(--primary); color: var(--text); }
+.tile-title { font-weight: 700; font-size: 1.05rem; line-height: 1.45; text-wrap: balance; }
+.tile-summary { font-size: .92rem; color: var(--text-2); line-height: 1.65; text-wrap: pretty; }
+.link-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--border); }
+.link-list li { margin: 0; padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 2px; }
+.link-list a { font-weight: 700; text-decoration: none; }
+.link-list a:hover { text-decoration: underline; }
+.link-list span { font-size: .9rem; color: var(--text-2); }
+.vets-band {
+  display: flex; gap: 20px; align-items: center; margin-top: 36px; padding: 20px;
+  border-radius: var(--radius); background: var(--emergency-pale);
+}
+.vets-band h2 { margin-top: 0; }
+.band-cat { width: 90px; height: 90px; flex: none; color: var(--cat-ink); }
+@media (max-width: 560px) {
+  .page-head.with-cat, .vets-band { flex-direction: column; align-items: flex-start; }
+  .head-cat { width: 72px; height: 72px; }
+}
+
+/* 線條貓的微動態（沿用網站設計稿），使用者關閉動態時不動 */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-cat .anim-tail { animation: tail-wag 1.6s ease-in-out infinite; }
+}
+@keyframes tail-wag { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(12deg); } }
+@keyframes head-tilt { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(8deg); } }
+
+/* 翻面卡：checkbox + label，不用 JavaScript。兩面疊在同一格，高度取較高的一面 */
+.flip { position: relative; display: flex; }
+.flip-toggle { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.flip-inner {
+  flex: 1; display: grid; cursor: pointer; transform-style: preserve-3d;
+  transition: transform .5s ease; min-height: 220px;
+}
+.flip-toggle:checked + .flip-inner { transform: rotateY(180deg); }
+.flip-toggle:focus-visible + .flip-inner { outline: 3px solid var(--text); outline-offset: 3px; border-radius: var(--radius); }
+.face {
+  grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  display: flex; flex-direction: column; gap: 8px; padding: 20px 20px 16px;
+  border-radius: var(--radius); border: 1px solid var(--border); background: var(--bg-card);
+  overflow-wrap: anywhere; min-width: 0;
+}
+.face.back { transform: rotateY(180deg); background: var(--primary-pale); border-color: #cfe0d4; }
+.flip:hover .face { border-color: var(--primary); }
+.flip-hint { margin-top: auto; padding-top: 8px; font-size: .8rem; color: var(--text-muted); text-align: right; }
+.flip-kicker { margin: 0; font-size: .82rem; color: var(--text-muted); }
+.flip-title { margin: 0; font-size: 1.15rem; line-height: 1.4; text-wrap: balance; }
+.flip-points { margin: 0; padding: 0; list-style: none; counter-reset: fp; display: grid; gap: 6px; }
+.flip-points li { counter-increment: fp; display: flex; gap: 8px; margin: 0; line-height: 1.5; }
+.flip-points li::before { content: counter(fp); flex: none; font-weight: 700; color: var(--primary); }
+.flip-text { margin: 0; font-size: .95rem; line-height: 1.7; color: var(--text); }
+.flip-links { display: flex; flex-direction: column; gap: 4px; font-weight: 700; }
+.flip-links a { text-decoration: none; }
+.flip-num { font-size: 2rem; font-weight: 700; color: var(--primary); line-height: 1; }
+.flip-point { margin: 0; font-size: 1.15rem; font-weight: 700; line-height: 1.5; text-wrap: balance; }
+.flip-num-small { margin: 0; font-size: .82rem; color: var(--text-muted); }
+.points-flip { margin: 8px 0 32px; text-align: center; }
+.points-flip .flip-grid { text-align: left; }
+.flip-help { color: var(--text-muted); font-size: .9rem; margin-top: -4px; }
+@media (prefers-reduced-motion: reduce) { .flip-inner { transition: none; } }
+#card .flip-grid { max-width: 640px; margin: 0 auto; }   /* 首頁小卡排 2×2，不出現 3＋1 */
+.home-section > h2 { text-align: center; }
+.face.front { position: relative; }
+.flip-cat-wrap {
+  margin-top: auto; align-self: flex-start; display: grid; place-items: center;
+  width: 92px; height: 92px; border-radius: 50%; background: var(--primary-pale);
+}
+.flip-cat { width: 72px; height: 72px; color: var(--cat-ink); }
+.face.front .flip-hint { position: absolute; right: 18px; bottom: 16px; padding: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .flip:hover .flip-cat .anim-tail { animation: tail-wag 1.6s ease-in-out infinite; }
+  .flip:hover .flip-cat .anim-tilt { animation: head-tilt 2s ease-in-out infinite; }
+}
+
+/* 小卡頁：重點翻面卡的貓小一點 */
+.points-flip .flip-cat-wrap { width: 76px; height: 76px; }
+.points-flip .flip-cat { width: 58px; height: 58px; }
+/* 社群圖翻面：正面是社群圖本身，背面和正面同大小，內容長就在卡片裡捲動 */
+.post-flip .flip-inner { min-height: 0; }
+.post-flip .face.front { padding: 0; border: 0; background: none; }
+.post-flip .face.front .flip-hint { right: 14px; bottom: 10px; z-index: 2; }
+.post-flip .face.back { position: absolute; inset: 0; overflow-y: auto; gap: 10px; }
+.post-back-list { margin: 0; padding-left: 1.3em; display: grid; gap: 10px; font-size: .92rem; line-height: 1.7; }
+.post-back-list strong { display: block; }
+.post-back-link { font-weight: 700; text-decoration: none; }
+/* 翻面卡正面字大一點，和背面份量接近 */
+#card .flip-title { font-size: 1.25rem; }
+#card .flip-points li { font-size: 1.02rem; }
+.flip-kicker { font-weight: 500; color: var(--primary-deep); }
+/* 首頁統一置中 */
+.vets-band { flex-direction: column; align-items: center; text-align: center; }
+.vets-band .btn-row { justify-content: center; }
+/* 小卡頁：社群圖和「什麼時候要找獸醫」並排，頂端對齊、等高 */
+.card-layout { align-items: stretch; margin-top: 8px; }
+.post-preview { position: static; display: flex; flex-direction: column; }
+.card-layout > .vet-box { margin-top: 0; display: flex; flex-direction: column; }
+.card-layout > .vet-box .btn { margin-top: auto; align-self: flex-start; }
+.home-care { margin-top: 28px; }
