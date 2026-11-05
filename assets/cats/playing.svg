@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="35" r="5" fill="var(--pale-moss)"/>
+                <path d="M 9 32 C 11 34, 13 36, 14 38" stroke-width="1.6"/>
+                <path d="M 14 32 C 12 34, 10 36, 8 37" stroke-width="1.6"/>
+                <g class="anim-play" style="transform-origin: 32px 32px;">
+                    <path d="M 39 27 C 44 23, 45 15, 41 11" />
+                    <path d="M 19 25 C 18 22, 19 19, 20 17 L 18 9 L 25 14 C 27 13.5, 29 13.5, 31 14 L 37 9 L 35 17 C 40 19, 43 25, 42 32 C 41 37, 37 39, 32 39 L 22 39 C 19 39, 19 35, 22 34 C 19 32, 19 28, 19 25 Z" fill="var(--cat-white)"/>
+                    <ellipse cx="22" cy="24.5" rx="1.8" ry="1.1" fill="var(--cat-blush)" stroke="none"/>
+                    <ellipse cx="32" cy="24.5" rx="1.8" ry="1.1" fill="var(--cat-blush)" stroke="none"/>
+                    <circle cx="24" cy="21.5" r="1.9" fill="currentColor" stroke="none"/>
+                    <circle cx="30" cy="21.5" r="1.9" fill="currentColor" stroke="none"/>
+                    <path d="M 25.5 24.5 Q 26.5 26 27.5 24.5 Q 28.5 26 29.5 24.5" stroke-width="1.8"/>
+                    <path d="M 21 31 C 16 30, 14 32, 16 35 C 17 36, 20 35, 23 34" fill="var(--cat-white)"/>
+                </g>
+            </svg>
