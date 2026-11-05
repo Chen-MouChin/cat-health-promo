@@ -1,0 +1,15 @@
+{
+  "_說明": "貓健康站上已上線、已審核（quality: reviewed）的文章。頁面只能導流到這裡列出的文章；label 是推廣頁上的連結文字，要符合 wording.json。網站新上線文章時，在這裡加一筆再用。",
+  "_checked": "2026-11-04",
+  "articles": {
+    "cat-food-by-life-stage": { "label": "不同年齡怎麼吃：幼貓、成貓、老貓", "category": "飲食" },
+    "cat-food-selection-taiwan": { "label": "貓飼料怎麼選", "category": "飲食" },
+    "cat-treats-supplements-taiwan": { "label": "零食怎麼給、哪些補充品有根據", "category": "飲食" },
+    "cat-litter-box-guide": { "label": "貓砂盆怎麼選：材質、大小、數量與清潔", "category": "居家照顧" },
+    "cat-environment-enrichment-taiwan": { "label": "環境豐富化：台灣公寓怎麼做", "category": "居家照顧" },
+    "cat-neutering-aftercare-taiwan": { "label": "結紮時機與術後 7 天照顧", "category": "預防保健" },
+    "cat-eye-ear-problems-taiwan": { "label": "眼睛與耳朵問題怎麼分辨", "category": "急症與症狀" },
+    "male-cat-urethral-obstruction": { "label": "公貓尿道阻塞：怎麼辨識、醫院怎麼處理", "category": "急症與症狀" },
+    "fiv-felv-management-taiwan": { "label": "貓愛滋與貓白血病的照顧", "category": "疾病" }
+  }
+}

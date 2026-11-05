@@ -1,0 +1,115 @@
+{
+  "_說明": "出處清單，從貓健康站 content/references/citations.json 抄過來，key 必須一樣。正文用 [^KEY] 引用；commercial_use 是 no 的來源不能用（推廣頁會導流到有廣告的網站和收費 App）。新來源先在網站的 citations.json 審過，再抄到這裡。",
+  "AAHA-NUTRITION-2021": {
+    "authors": "Cline MG, Burns KM, Coe JB, et al.",
+    "title": "2021 AAHA Nutrition and Weight Management Guidelines for Dogs and Cats",
+    "year": 2021,
+    "url": "https://www.aaha.org/wp-content/uploads/globalassets/02-guidelines/2021-nutrition-and-weight-management/resourcepdfs/new-2021-aaha-nutrition-and-weight-management-guidelines-with-ref.pdf",
+    "commercial_use": "facts-only"
+  },
+  "FEDIAF-NUTRITION-GUIDELINES-2025": {
+    "authors": "FEDIAF（European Pet Food Industry Federation）",
+    "title": "Nutritional Guidelines for Complete and Complementary Pet Food for Cats and Dogs (September 2025)",
+    "year": 2025,
+    "url": "https://europeanpetfood.org/wp-content/uploads/2025/09/FEDIAF-Nutritional-Guidelines_2025-ONLINE.pdf",
+    "commercial_use": "facts-only"
+  },
+  "WSAVA-CALORIE-CAT-2020": {
+    "authors": "WSAVA Global Nutrition Committee",
+    "title": "Calorie Needs for an Average Healthy Adult Cat in Ideal Body Condition",
+    "year": 2020,
+    "url": "https://wsava.org/wp-content/uploads/2020/07/Calorie-Needs-for-Healthy-Adult-Cats-updated-July-2020.pdf",
+    "commercial_use": "facts-only"
+  },
+  "ACVIM-HCM-2020": {
+    "authors": "Luis Fuentes V, Abbott J, Chetboul V, et al.",
+    "title": "ACVIM Consensus Statement: Guidelines for the Classification, Diagnosis, and Management of Cardiomyopathies in Cats",
+    "year": 2020,
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/jvim.15745",
+    "commercial_use": "facts-only"
+  },
+  "CORNELL-ANOREXIA": {
+    "authors": "Cornell Feline Health Center",
+    "title": "Anorexia",
+    "year": 2024,
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/anorexia",
+    "commercial_use": "facts-only"
+  },
+  "EVANGELISTA-2019-FELINE-GRIMACE-SCALE": {
+    "authors": "Evangelista MC, Watanabe R, Leung VSY, et al.",
+    "title": "Facial expressions of pain in cats: the development and validation of a Feline Grimace Scale",
+    "year": 2019,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6911058/",
+    "commercial_use": "ok"
+  },
+  "CORNELL-FLUTD": {
+    "authors": "Cornell Feline Health Center",
+    "title": "Feline Lower Urinary Tract Disease",
+    "year": 2024,
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-lower-urinary-tract-disease",
+    "commercial_use": "facts-only"
+  },
+  "TAYLOR-2025-ISFM-LUTD": {
+    "authors": "Taylor S, Boysen S, Buffington T, et al.",
+    "title": "2025 iCatCare consensus guidelines on the diagnosis and management of lower urinary tract diseases in cats",
+    "year": 2025,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11816079/",
+    "commercial_use": "facts-only"
+  },
+  "AAFP-HOUSESOILING-2014": {
+    "authors": "ISFM & AAFP",
+    "title": "2014 ISFM/AAFP Guidelines for Diagnosing and Solving House-Soiling Behavior in Cats",
+    "year": 2014,
+    "url": "https://catvets.com/resource/aafp-isfm-house-soiling-guidelines/",
+    "commercial_use": "facts-only"
+  },
+  "AAFP-2013-ENVIRONMENTAL-NEEDS-2013": {
+    "authors": "AAFP",
+    "title": "2013 AAFP and ISFM Feline Environmental Needs Guidelines",
+    "year": 2013,
+    "url": "https://catvets.com/resource/guidelines-practice-guidelines-environmental-needs-guidelines/",
+    "commercial_use": "facts-only"
+  },
+  "CORNELL-SPAYING-NEUTERING": {
+    "authors": "Cornell Feline Health Center",
+    "title": "Spaying and Neutering",
+    "year": 2024,
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/spaying-and-neutering",
+    "commercial_use": "facts-only"
+  },
+  "OVERLEY-2005-FELINE-MAMMARY": {
+    "authors": "Beth Overley, Frances S Shofer, Michael H Goldschmidt, Dave Sherer, Karin U Sorenmo",
+    "title": "Association between ovariohysterectomy and feline mammary carcinoma",
+    "year": 2005,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16095174/",
+    "commercial_use": "facts-only"
+  },
+  "AYHAN-2025-ECOLLAR-CORSET": {
+    "authors": "Isil A, Yanmaz LE",
+    "title": "Effects of Elizabethan Collar and Wound Protection Corset on Pain and Discomfort Levels in Cats Undergoing Ovariohysterectomy",
+    "year": 2025,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11720731/",
+    "commercial_use": "ok"
+  },
+  "CORNELL-NEW-CAT": {
+    "authors": "Cornell Feline Health Center",
+    "title": "Choosing and Caring for Your New Cat",
+    "year": 2026,
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/choosing-and-caring-your-new-cat",
+    "commercial_use": "facts-only"
+  },
+  "CORNELL-FEEDING-YOUR-CAT": {
+    "authors": "Cornell Feline Health Center",
+    "title": "Feeding Your Cat",
+    "year": 2026,
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feeding-your-cat",
+    "commercial_use": "facts-only"
+  },
+  "AAHA-PET-EMERGENCY-SIGNS": {
+    "authors": "American Animal Hospital Association",
+    "title": "Help! Is This a Pet Emergency?",
+    "year": 2025,
+    "url": "https://www.aaha.org/resources/help-is-this-a-pet-emergency/",
+    "commercial_use": "facts-only"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "_說明": "品牌與導流設定。頁面上的品牌文字、網址、網站功能清單都從這裡讀，不要寫死在 content/ 或 build.py。",
+  "name": "貓健康站",
+  "site_url": "https://cathealthtw.com/",
+  "site_tagline": "有出處的貓健康知識，沒有業配。",
+  "app_status_text": "貓健康站 App 準備中。",
+  "disclaimer": "紀錄整理與衛教資訊",
+  "site_links": {
+    "home": {
+      "url": "https://cathealthtw.com/",
+      "label": "貓健康站首頁"
+    },
+    "articles": {
+      "url": "https://cathealthtw.com/articles/",
+      "label": "看全部文章"
+    },
+    "vets": {
+      "url": "https://cathealthtw.com/vets.html",
+      "label": "查附近的動物醫院"
+    },
+    "vets_night": {
+      "url": "https://cathealthtw.com/vets.html?only24h=1",
+      "label": "只看夜間急診的動物醫院"
+    },
+    "subsidy": {
+      "url": "https://cathealthtw.com/neuter-subsidy.html",
+      "label": "查各縣市結紮補助"
+    },
+    "library": {
+      "url": "https://cathealthtw.com/library.html",
+      "label": "到學術文獻庫查資料"
+    },
+    "editorial": {
+      "url": "https://cathealthtw.com/editorial.html",
+      "label": "編輯方針：誰寫、怎麼審"
+    },
+    "breeds": {
+      "url": "https://cathealthtw.com/breeds.html",
+      "label": "看品種圖鑑"
+    }
+  },
+  "utm_source": "promo",
+  "card_topics": [
+    "急症",
+    "飲食",
+    "居家照顧",
+    "結紮與術後",
+    "行為",
+    "慢性病照顧"
+  ],
+  "site_features": {
+    "articles": "衛教文章：每篇開頭有 30 秒重點，每段附出處",
+    "library": "學術文獻庫：300 多筆指引與研究，來自國際獸醫組織、大學獸醫中心、同儕審查期刊與政府機關，每筆附原文連結與中文摘要，標「已審核」的逐項核對過原文",
+    "editorial": "編輯方針：公開誰在寫、引用哪些來源、怎麼審核與更正",
+    "vets": "全台 22 縣市動物醫院查詢，資料來自農業部與縣市政府公開資料",
+    "vets-filter": "篩選：只看夜間急診、只看貓專科",
+    "vets-near": "手機可以定位，找附近的醫院",
+    "subsidy": "22 縣市家貓結紮補助：金額、條件、申請方式與期限，依各縣市政府公告整理",
+    "library-search": "文獻庫可以搜尋，也能依主題、來源篩選",
+    "breeds": "品種圖鑑：68 個品種的性格、壽命、體型與健康注意事項，資料來自 TheCatAPI 與 Wikipedia",
+    "breeds-filter": "品種圖鑑可以用中英文名稱搜尋，也能依毛長、體型篩選；有遺傳健康風險的品種會特別標示"
+  }
+}
